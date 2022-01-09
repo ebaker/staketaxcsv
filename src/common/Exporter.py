@@ -1,4 +1,3 @@
-
 import csv
 from datetime import datetime
 import logging
@@ -595,6 +594,8 @@ class Exporter:
             # data rows
             if self.wallet_address.startswith("cosmo"):
                 tx_source = "ATOM WALLET"
+            if self.wallet_address.startswith("juno"):
+                tx_source = "JUNO WALLET"
             elif self.wallet_address.startswith("terra"):
                 tx_source = "LUNA WALLET"
             elif self.wallet_address.startswith("osmo"):

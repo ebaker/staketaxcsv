@@ -1,10 +1,10 @@
-
 import os
 
 # Environment variables (required for each respective report)
 
 SOL_NODE = os.environ.get("SOL_NODE", "")
 ATOM_NODE = os.environ.get("ATOM_NODE", "")
+JUNO_NODE = os.environ.get("JUNO_NODE", "")
 TERRA_LCD_NODE = os.environ.get("TERRA_LCD_NODE", "")
 
 # Optional environment variables
@@ -13,6 +13,7 @@ TERRA_FIGMENT_KEY = os.environ.get("TERRA_FIGMENT_KEY", "")
 # #############################################################################
 
 TICKER_ATOM = "ATOM"
+TICKER_JUNO = "JUNO"
 TICKER_LUNA = "LUNA"
 TICKER_SOL = "SOL"
 TICKER_OSMO = "OSMO"
